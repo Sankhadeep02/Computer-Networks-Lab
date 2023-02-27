@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class MulticastDateServer{
     public static void main(String[] args) throws IOException, InterruptedException{
-        DatagramSocket Socket = new DatagramSocket(5050);
+        DatagramSocket Socket = new DatagramSocket(7513);
         
         for (int i = 0; i < 500; i++) {
             byte[] buf = new Date().toString().getBytes();
